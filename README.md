@@ -1,2 +1,2 @@
 # cocktail-menu-app
-An app designed to take in user ingredients on hand and return cocktails eligible for them to make based on such
+An app designed to take in user base spirits on hand and return cocktails they're eligible to make
