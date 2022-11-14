@@ -1,4 +1,4 @@
-favorites: [{
+favorites [{
     "drinkID": "11007",
     "drinkName": "Margarita",
     "strTags": "IBA,ContemporaryClassic",
@@ -212,12 +212,6 @@ favorites: [{
     "strAlcoholic": "Alcoholic",
     "strGlass": "Collins glass",
     "strInstructions": "In a mason jar muddle the watermelon and 5 mint leaves together into a puree and strain. Next add the grapefruit juice, juice of half a lime and the tequila as well as some ice. Put a lid on the jar and shake. Pour into a glass and add more ice. Garnish with fresh mint and a small slice of watermelon.",
-    "strInstructionsES": null,
-    "strInstructionsDE": null,
-    "strInstructionsFR": null,
-    "strInstructionsIT": "In un barattolo di vetro pestare l'anguria e 5 foglie di menta insieme, filtrare il contenuto in un bicchiere. Quindi aggiungere il succo di pompelmo, il succo di mezzo lime, la tequila e un po 'di ghiaccio. Metti un coperchio sul barattolo e agita. Versare in un bicchiere e aggiungere altro ghiaccio. Guarnire con menta fresca e una fettina di anguria.",
-    "strInstructionsZH-HANS": null,
-    "strInstructionsZH-HANT": null,
     "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/dztcv51598717861.jpg",
     "drinkIngredient1": "Watermelon",
     "drinkIngredient2": "Mint",
