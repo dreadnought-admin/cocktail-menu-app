@@ -24,21 +24,38 @@
     <div class="favorites-nav"> <!-- populated by function that renders images pulled from 2nd stagnant obj in db.json -->
         <h3>Favorites of the Week</h3>
         <ul id="static-drink-list">
-            <li><img class="static-drinks" id="static-first" src="https://i.imgur.com/gdfm6N8.png" alt="first drink of the week"></li>
-            <li><img class="static-drinks" id="static-second" src="https://i.imgur.com/oFgiige.jpg" alt="second drink of the week"></li>
-            <li><img class="static-drinks" id="static-third" src="https://i.imgur.com/gdfm6N8.png" alt="third drink of the week"></li>
-            <li><img class="static-drinks" id="static-fourth" src="https://i.imgur.com/oFgiige.jpg" alt="fourth drink of the week"></li>
+            <li><img class="static-drinks" id="static-first" src="https://i.imgur.com/C8eKXmK.png" alt="first drink of the week"></li>
+            <li><img class="static-drinks" id="static-second" src="https://i.imgur.com/zxNj939.png" alt="second drink of the week"></li>
+            <li><img class="static-drinks" id="static-third" src="https://i.imgur.com/b2JYwGY.png" alt="third drink of the week"></li>
+            <li><img class="static-drinks" id="static-fourth" src="https://i.imgur.com/ZHcWqY1.png" alt="fourth drink of the week"></li>
         </ul>
         <h5>Bartender-built, barfly-approved</h5>
     </div>
 
     <div class="showcase"> <!-- populated by function/event handler triggered by search -->
         <div id="showcase-head">
-            <h3 id="drink-name">This is where this bitch will showcase information</h3>
-            <img id="drink-display-image" src="#" alt="drink image">
-            <button id="drink-favorites">Favorited by 0 People!</button>
-        </div> 
+            <h3 id="drink-name">What's On the Menu?</h3>
+            <img class="showcase-details" id="drink-display-image" src="https://i.imgur.com/1mPqqkE.jpg" alt="drink image">
+        </div>
+        <div id="showcase-ingredients">
+            <h3>Ingredients & Instructions</h3>
+            <ul id="ingredient-list">
+                <li>first item</li>
+                <li>second item</li>
+                <li>third</li>
+                <li>fourth</li>
+                <li>fifth</li>
+                <li>sixth</li>
+                <li>seventh</li>
+                <!-- whatever populates this must be a paragraph to be formatted properly! -->
+            </ul>
+        </div>
+        <div class="scroll" id="instructions">
+            <!-- whatever populates this must be a paragraph to be formatted properly!-->
+        </div>
     </div>
+    <button id="drink-favorites-btn">Favorited by 0 People!</button>
+
 
     <div id="comments"> <!-- populated by user input in #comment-form -->
         <form id="comment-form">
