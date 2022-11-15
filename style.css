@@ -1,3 +1,59 @@
-/* css time baybee 
-*/
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+
+.glow {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+
+body {
+    background-color: #FAECE7;
+}
+
+#title-bar {
+    display: inline;
+    max-width: 250px;
+}
+
+#title {
+    font-size: 45px;
+    font-style: oblique;
+}
+
+#subtitle {
+    font-size: 25px;
+    font-style: italic;
+}
+
+#logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    padding-right: 75px;
+}
+
+#site-logo {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+h2, h4 {
+    font-family: 'Rancho', cursive;
+    text-align: center;
+    text-shadow: 2px 2px #000000;
+    color: #FFD791;
+}
+
 
