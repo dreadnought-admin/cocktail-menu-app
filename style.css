@@ -255,6 +255,14 @@ li.static-image:not(:last-child) {
     width: auto;
 }
 
+#showcase-ingredients > h3 {
+    font-family: 'Rancho', cursive;
+    font-size: 25px;
+    color: #FFCD75;
+    text-shadow: 1px 1px #000;
+
+}
+
 #showcase-ingredients {
     font-family: "Dongle", sans-serif;
     font-size: 20px;
@@ -263,5 +271,48 @@ li.static-image:not(:last-child) {
     block-size: 150px;
     max-height: 50%;
     margin-left: 25px;
+}
+
+#favorites {
+    position: relative;
+    display: block;
+    bottom: 0;
+    border: 3px solid #FFCD75;
+    border-radius: 30px;
+    background-color: #FFE5DE;
+
+}
+
+#favorites-bar {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    left: 25px;
+}
+
+#favorites-bar > img {
+    position: relative;
+    display: inline-block; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000;
+    border-radius: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#reset-favorites-btn {
+    position: absolute;
+    display: block;
+    border: 1px solid #000;
+    border-radius: 30px;
+    font-family: 'Rancho', cursive;
+    font-size: 15px;
+    background-color: #FFCD75;
+    color: #000;
+    right: 50px;
+    bottom: 10px;
 }
 
