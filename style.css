@@ -215,12 +215,13 @@ li.static-image:not(:last-child) {
 #drink-favorites-btn {
     position: absolute;
     border: 1px solid #000;
+    border-radius: 30px;
     font-family: 'Rancho', cursive;
-    font-size: 15px; 
+    font-size: 15px;
     background-color: #FFCD75;
     color: #000;
-    right: 125px;
-    margin-top: 1000px;
+    right: 20px;
+    bottom: 10px;
     
 
 }
