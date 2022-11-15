@@ -49,11 +49,52 @@ body {
     max-width: 100%;
 }
 
+#search-bar {
+    position: absolute;
+    right: 0;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+#search-btn {
+    display: inline-block;
+    border: 1px solid;
+    font-family: 'Rancho', cursive;
+    font-size: 15px; 
+    background-color: #FFCD75;
+    color: #FFF;
+    max-height: 100%;
+    max-width: 100%;
+    
+}
+
+#search-label {
+    font-family: 'Rancho', cursive;
+    font-size: 22px;
+    color: #FFF;
+    text-shadow: 1px 1px #000000;
+    text-decoration-line: underline;
+    padding-right: 4px;
+}
+
+.favorites-nav {
+    position: absolute;
+    left: 0px;
+    width: 175px;
+    height: 450px;
+    border: 3px solid #FFCD75;
+    border-radius: 30px;
+    background-color: #FFE5DE;
+    margin-left: 25px;
+    margin-top: 50px;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
+
 
 h2, h4 {
     font-family: 'Rancho', cursive;
