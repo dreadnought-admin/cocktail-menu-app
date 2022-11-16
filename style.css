@@ -80,10 +80,10 @@ body {
 #logo {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 0px;
     width: 200px;
     height: 200px;
-    padding-right: 75px;
+
 }
 
 /*
@@ -103,8 +103,10 @@ body {
 */
 
 #site-logo {
-    max-height: 100%;
-    max-width: 100%;
+    position: absolute;
+    max-height: 150%;
+    max-width: 150%;
+    right: 100px;
 }
 
 /*
@@ -206,7 +208,7 @@ li.static-image:not(:last-child) {
 }
 
 .showcase {
-    position: relative; 
+    position: relative;
     border: 3px solid #FFCD75;
     border-radius: 30px;
     background-color: #FFE5DE;
@@ -216,17 +218,22 @@ li.static-image:not(:last-child) {
     margin-top: 90px;
 }
 
-#showcase-head > img {
-    max-height: 200%;
-    max-width: 450px;
+#showcase-head {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+#beer-display-image {
+    position: absolute;
+    max-height: 50%;
+    max-width: 50%;
     display: block;
     margin-left: auto;
-    margin-right: auto;
-    width: 400px;
-    height: 350; 
+    margin-right: auto; 
     border: 1px solid #FFF;
     border-radius: 30px;
     margin-bottom: 10px;
+    left: 200px;
 }
 
 #beer-favorites-btn {
@@ -257,9 +264,9 @@ li.static-image:not(:last-child) {
     border: 1px solid #000;
     background-color: #FFF;
     right: 25px;
-    bottom: 125px;
+    bottom: 135px;
     max-height: 100%;
-    max-width: 300px;
+    max-width: 275px;
 
 }
 
@@ -282,6 +289,7 @@ li.static-image:not(:last-child) {
 }
 
 #showcase-food-pairings {
+    position: absolute;
     font-family: "Dongle", sans-serif;
     font-size: 20px;
     color: #000;
@@ -289,6 +297,7 @@ li.static-image:not(:last-child) {
     block-size: 150px;
     max-height: 50%;
     margin-left: 25px;
+    margin-top: 430px;
 }
 
 /*
