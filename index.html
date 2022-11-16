@@ -1,25 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
 
 <head>
-    <title>Cocktail Finder</title>
+    <!-- don't touch! -->
+    <meta charset="utf-8">
+    <!--<script src="src/index.js" charset="utf-8"></script>-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Home Bar Buddy</title>
 </head>
 
 <body>
-    <header>
-        <h3>Drinks of the week</h3>
-    </header>
-
-    <div id="drink-bar">
-    <!-- show drink names here -->
+    <!-- each div id to be populated by js functions on page load -->
+    <div id="title-bar">
+        <h2 id="title">Home Bar Buddy!</h2>
+        <h4 id="subtitle">Create smooth-drinking cocktails with your booze of choice 🥂</h4>
     </div>
 
-    <div class = drikInfo
+    <div id="logo">
+        <!-- rendered by a function in js to expedite -->
+        <img id="site-logo" src="https://i.imgur.com/EFeg7yO.png" alt="site logo">
+    </div>
 
+    <div id="search-bar">
+        <label for="menu-search" id="search-label">Enter Your Spirit:</label>
+        <input type="search" id="menu-search" name="q">
+        <button id="search-btn">What Can I Make?</button>
+    </div>
 
+    <div class="favorites-nav">
+        <!-- populated by function that renders images pulled from 2nd stagnant obj in db.json -->
+        <h3>Favorites of the Week</h3>
+        <ul id="static-drink-list">
+            <li><img class="static-drinks" id="static-first" src="https://i.imgur.com/gdfm6N8.png"
+                    alt="first drink of the week"></li>
+            <li><img class="static-drinks" id="static-second" src="https://i.imgur.com/oFgiige.jpg"
+                    alt="second drink of the week"></li>
+            <li><img class="static-drinks" id="static-third" src="https://i.imgur.com/gdfm6N8.png"
+                    alt="third drink of the week"></li>
+            <li><img class="static-drinks" id="static-fourth" src="https://i.imgur.com/oFgiige.jpg"
+                    alt="fourth drink of the week"></li>
+        </ul>
+        <h5>Bartender-built, barfly-approved</h5>
+    </div>
 
+    <div class="showcase">
+        <!-- populated by function/event handler triggered by search -->
+        <div id="showcase-head">
+            <h3 id="drink-name">This is where this bitch will showcase information</h3>
+            <img id="drink-display-image" src="#" alt="drink image">
+            <button id="drink-favorites">Favorited by 0 People!</button>
+        </div>
+    </div>
 
+    <div id="comments">
+        <!-- populated by user input in #comment-form -->
+        <form id="comment-form">
+            <label for="new-comment">Leave a Comment</label>
+            <input type="text" name="user-comment-input">
+            <input id="comment-btn" type="submit" value="Comment">
+        </form>
+    </div>
 
+    <div id="favorites">
+        <!-- consider removing img ids from here and instead using a function to render each individually, maxing out at an arbitrary # -->
+        <img id="favorite-1" src="#" alt="Your first favorite drink">
+        <img id="favorite-2" src="#" alt="Your second favorite drink">
+        <img id="favorite-3" src="#" alt="Your third favorite drink">
+        <img id="favorite-3" src="#" alt="Your fourth favorite drink">
+    </div>
+
+    <!-- return to top bar inserted at bottom footer -->
 </body>
 
 </html>
