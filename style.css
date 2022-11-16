@@ -252,6 +252,7 @@ li.static-image:not(:last-child) {
 
 #food-pairings {
     position: relative;
+    list-style: square;
 }
 
 #brewers-instructions {
@@ -296,8 +297,10 @@ li.static-image:not(:last-child) {
     text-shadow: 1px 1px #fff;
     block-size: 150px;
     max-height: 50%;
+    max-width: 30%;
     margin-left: 25px;
-    margin-top: 430px;
+    margin-top: 450px;
+
 }
 
 /*
