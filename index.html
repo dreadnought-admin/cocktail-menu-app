@@ -1,65 +1,50 @@
 <!DOCTYPE html>
 <head> <!-- don't touch! -->
     <meta charset="utf-8">
-    <!--<script src="src/index.js" charset="utf-8"></script>-->
+    <script src="src/index.js" charset="utf-8"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Home Bar Buddy</title>
+    <title>Beer Buddy</title>
 </head>
 <body> <!-- each div id to be populated by js functions on page load -->
     <div id="title-bar">
-        <h2 id="title">Home Bar Buddy!</h2>
-        <h4 id="subtitle">Create smooth-drinking cocktails with your booze of choice 🥂</h4>
+        <h2 id="title">Beer Buddy!</h2>
+        <h4 id="subtitle">Browse Delicious Beers 🍻</h4>
     </div>
 
     <div id="logo"> <!-- rendered by a function in js to expedite -->
-        <img id="site-logo" src="https://i.imgur.com/EFeg7yO.png" alt="site logo">
+        <img id="site-logo" src="#" alt="site logo">
     </div>
-    
-<!-- a secondary logo 
-    <div id="secondary-logo">
-        <img id="second-site-logo" src="https://i.imgur.com/ts6BfCC.png" alt="secondary site logo">
-    </div> -->
 
-    <div id="search-bar">
+    <!-- <div id="search-bar">
         <label for="menu-search" id="search-label">Enter Your Spirit:</label>
         <input type="search" id="menu-search" name="q">
         <button id="search-btn">What Can I Make?</button>
-    </div>
+    </div> -->
     
-    <div class="favorites-nav"> <!-- populated by function that renders images pulled from 2nd stagnant obj in db.json -->
+    <div class="favorites"> <!-- populated by function that renders images pulled from 4 ids in API -->
         <h3>Favorites of the Week</h3>
-        <ul id="static-drink-list">
-            <li><img class="static-drinks" id="static-first" src="https://i.imgur.com/C8eKXmK.png" alt="first drink of the week"></li>
-            <li><img class="static-drinks" id="static-second" src="https://i.imgur.com/zxNj939.png" alt="second drink of the week"></li>
-            <li><img class="static-drinks" id="static-third" src="https://i.imgur.com/b2JYwGY.png" alt="third drink of the week"></li>
-            <li><img class="static-drinks" id="static-fourth" src="https://i.imgur.com/ZHcWqY1.png" alt="fourth drink of the week"></li>
+        <ul id="static-beer-list">
+            
         </ul>
-        <h5>Bartender-built, barfly-approved</h5>
+        <h5>Beer-lover Approved!</h5>
     </div>
 
-    <div class="showcase"> <!-- populated by function/event handler triggered by search -->
+    <div class="showcase"> <!-- populated by a single beer @ random id/index -->
         <div id="showcase-head">
-            <h3 id="drink-name">What's On the Menu?</h3>
-            <img class="showcase-details" id="drink-display-image" src="https://i.imgur.com/1mPqqkE.jpg" alt="drink image">
+            <h3 id="beer-name">Featured Brew</h3>
+            <img class="showcase-details" id="beer-display-image" src="#" alt="beer image">
         </div>
-        <div id="showcase-ingredients">
-            <h3>Ingredients & Instructions</h3>
-            <ul id="ingredient-list">
-                <li>first item</li>
-                <li>second item</li>
-                <li>third</li>
-                <li>fourth</li>
-                <li>fifth</li>
-                <li>sixth</li>
-                <li>seventh</li>
-                <!-- whatever populates this must be a paragraph to be formatted properly! -->
+        <div id="showcase-food-pairings">
+            <h3>Perfect Food Pairings</h3>
+            <ul id="food-pairings">
+               <!-- populated by a list that then gets paragraph children appended to it -->
             </ul>
         </div>
-        <div class="scroll" id="instructions">
-            <p id="instructions-text">Here's what you've got to do!</p><!-- whatever populates this must be a paragraph to be formatted properly!-->
+        <div class="scroll" id="brewers-instructions">
+            <p id="instructions-text"></p><!-- whatever populates this must be a paragraph to be formatted properly!-->
         </div>
         <div id="like-btn">
-            <button id="drink-favorites-btn">Favorited by 0 People!</button>
+            <button id="beer-favorites-btn">Favorited by 0 People!</button>
         </div>
     </div>
 
@@ -75,19 +60,6 @@
         <!--this is where new comments should appear-->
     </div>
 
-    <div id="favorites">
-        <div id="favorites-bar"><!-- consider removing img ids from here and instead using a function to render each individually, maxing out at an arbitrary # -->
-            <img class="favorite-drink-images" id="favorite-1" src="https://i.imgur.com/Q1VepXP.png" alt="Your first favorite drink">
-            <img class="favorite-drink-images" id="favorite-2" src="https://i.imgur.com/z8tG2m3.png" alt="Your second favorite drink">
-            <img class="favorite-drink-images" id="favorite-3" src="https://i.imgur.com/124eoV3.png" alt="Your third favorite drink">
-            <img class="favorite-drink-images" id="favorite-3" src="https://i.imgur.com/l6Dq9mL.png" alt="Your fourth favorite drink">
-            <img class="favorite-drink-images" id="favorite-3" src="https://i.imgur.com/gXHAwI1.png" alt="Your fourth favorite drink">
-            <button id="reset-favorites-btn">Reset Favorites</button> 
-        </div>
-        
-    </div>
-
-    <!-- return to top bar inserted at bottom footer -->
 </body>
 </html>
 
