@@ -42,34 +42,7 @@
     "drinkIngredient3": "1/4 cup Cream of coconut",
     "drinkIngredient4": "3 tblsp fresh Lime juice"
 
-},
-{
-
-    "drinkName": "Strawberry Margarita",
-    "strInstructions": "Rub rim of cocktail glass with lemon juice and dip rim in salt. Shake schnapps, tequila, triple sec, lemon juice, and strawberries with ice, strain into the salt-rimmed glass, and serve.",
-    "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/tqyrpw1439905311.jpg",
-    "drinkIngredient1": "1/2 oz Strawberry schnapps",
-    "drinkIngredient2": "1 oz Tequila",
-    "drinkIngredient3": "1/2 oz Triple sec",
-    "drinkIngredient4": "1 oz Lemon juice",
-    "drinkIngredient5": "1 oz Strawberries"
-
-
-},
-{
-
-    "drinkName": "Smashed Watermelon Margarita",
-    "strInstructions": "In a mason jar muddle the watermelon and 5 mint leaves together into a puree and strain. Next add the grapefruit juice, juice of half a lime and the tequila as well as some ice. Put a lid on the jar and shake. Pour into a glass and add more ice. Garnish with fresh mint and a small slice of watermelon.",
-    "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/dztcv51598717861.jpg",
-    "drinkIngredient1": "1/2 cup Watermelon",
-    "drinkIngredient2": "5 Mint",
-    "drinkIngredient3": "1/3 Cup Grapefruit Juice",
-    "drinkIngredient4": "Juice of 1/2 Lime",
-    "drinkIngredient5": "1 shot Tequila",
-    "drinkIngredient6": "Garnish with Watermelon",
-    "drinkIngredient7": "Garnish with Mint"
-
-
 }
+
 ]
 }

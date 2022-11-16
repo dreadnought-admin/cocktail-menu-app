@@ -1,4 +1,4 @@
-fetch('http://localhost:3000')
+fetch('http://localhost:3000/favorites')
     .then(r => r.json())
     .then(json => {
         drinkData = json
@@ -10,9 +10,9 @@ fetch('http://localhost:3000')
         drinkDetails(drinkData[0])
 
     })
-function createImage(ramen) {
-    let ramenMenu = document.querySelector('#ramen-menu')
-    let ramenImage = document.createElement('img')
+function createImage(drink) {
+    let margs = document.querySelector('#static-drink-list', '.static-drinks')
+    let ramenImage =
     ramenImage.src = ramen.image
     ramenMenu.appendChild(ramenImage)
 
