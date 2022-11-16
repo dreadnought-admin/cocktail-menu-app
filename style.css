@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400&family=Patrick+Hand+SC&family=Rancho&display=swap');
 
-@-webkit-keyframes glow {
+/*@-webkit-keyframes glow {
     from {
         text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
     }
@@ -9,7 +9,7 @@
         text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
     }
 }
-
+*/
 table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -108,13 +108,13 @@ body {
     max-width: 100%;
 }
 
+/*
 #search-bar {
     position: absolute;
     right: 30px;
     padding-top: 10px;
     padding-right: 10px;
 }
-
 #search-btn {
     display: inline-block;
     border: 1px solid;
@@ -126,7 +126,6 @@ body {
     max-width: 100%;
 
 }
-
 #search-label {
     font-family: 'Rancho', cursive;
     font-size: 22px;
@@ -135,7 +134,7 @@ body {
     text-decoration-line: underline;
     padding-right: 4px;
 }
-
+*/
 
 ul {
     list-style-type: none;
@@ -156,7 +155,7 @@ li.static-image:not(:last-child) {
     margin-bottom: 3px;
 }
 
-#static-drink-list>li>img {
+#static-beer-list>li>img {
     max-height: 200%;
     max-width: 200px;
     display: block;
@@ -170,7 +169,7 @@ li.static-image:not(:last-child) {
 
 }
 
-.favorites-nav {
+.favorites {
     position: absolute;
     left: 0px;
     width: 300px;
@@ -184,7 +183,7 @@ li.static-image:not(:last-child) {
     margin-bottom: 50px;
 }
 
-.favorites-nav>h3 {
+.favorites>h3 {
     font-family: 'Patrick Hand SC', cursive;
     font-size: 20px;
     text-align: center;
@@ -193,7 +192,7 @@ li.static-image:not(:last-child) {
     width: auto;
 }
 
-.favorites-nav>h5 {
+.favorites>h5 {
     font-family: 'Patrick Hand SC', cursive;
     font-size: 15px;
     font-style: italic;
@@ -230,7 +229,7 @@ li.static-image:not(:last-child) {
     margin-bottom: 10px;
 }
 
-#drink-favorites-btn {
+#beer-favorites-btn {
     position: absolute;
     border: 1px solid #000;
     border-radius: 30px;
@@ -244,11 +243,11 @@ li.static-image:not(:last-child) {
 
 }
 
-#ingredient-list {
+#food-pairings {
     position: relative;
 }
 
-#instructions {
+#brewers-instructions {
     font-family: 'Dongle', sans-serif;
     font-size: 20px;
     color: #000;
@@ -273,7 +272,7 @@ li.static-image:not(:last-child) {
     width: auto;
 }
 
-#showcase-ingredients>h3 {
+#showcase-food-pairings>h3 {
     font-family: 'Rancho', cursive;
     font-size: 25px;
     color: #FFCD75;
@@ -282,7 +281,7 @@ li.static-image:not(:last-child) {
 
 }
 
-#showcase-ingredients {
+#showcase-food-pairings {
     font-family: "Dongle", sans-serif;
     font-size: 20px;
     color: #000;
@@ -292,6 +291,7 @@ li.static-image:not(:last-child) {
     margin-left: 25px;
 }
 
+/*
 #favorites {
     position: relative;
     display: block;
@@ -299,9 +299,7 @@ li.static-image:not(:last-child) {
     border: 3px solid #FFCD75;
     border-radius: 30px;
     background-color: #FFE5DE;
-
 }
-
 #favorites-bar {
     position: relative;
     margin-left: auto;
@@ -309,8 +307,7 @@ li.static-image:not(:last-child) {
     left: 25px;
     bottom: 0;
 }
-
-#favorites-bar>img {
+#favorites-bar > img {
     position: relative;
     display: inline-block;
     margin-left: auto;
@@ -322,7 +319,6 @@ li.static-image:not(:last-child) {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
 #reset-favorites-btn {
     position: absolute;
     display: block;
@@ -335,6 +331,7 @@ li.static-image:not(:last-child) {
     right: 50px;
     bottom: 10px;
 }
+*/
 
 #comments {
     position: relative;
