@@ -20,6 +20,11 @@
         <img id="site-logo" src="https://i.imgur.com/EFeg7yO.png" alt="site logo">
     </div>
 
+    <!-- a secondary logo
+    <div id="secondary-logo">
+        <img id="second-site-logo" src="https://i.imgur.com/ts6BfCC.png" alt="secondary site logo">
+    </div> -->
+
     <div id="search-bar">
         <label for="menu-search" id="search-label">Enter Your Spirit:</label>
         <input type="search" id="menu-search" name="q">
@@ -30,13 +35,13 @@
         <!-- populated by function that renders images pulled from 2nd stagnant obj in db.json -->
         <h3>Favorites of the Week</h3>
         <ul id="static-drink-list">
-            <li><img class="static-drinks" id="static-first" src="https://i.imgur.com/gdfm6N8.png"
+            <li><img class="static-drinks" id="static-first" src="https://i.imgur.com/C8eKXmK.png"
                     alt="first drink of the week"></li>
-            <li><img class="static-drinks" id="static-second" src="https://i.imgur.com/oFgiige.jpg"
+            <li><img class="static-drinks" id="static-second" src="https://i.imgur.com/zxNj939.png"
                     alt="second drink of the week"></li>
-            <li><img class="static-drinks" id="static-third" src="https://i.imgur.com/gdfm6N8.png"
+            <li><img class="static-drinks" id="static-third" src="https://i.imgur.com/b2JYwGY.png"
                     alt="third drink of the week"></li>
-            <li><img class="static-drinks" id="static-fourth" src="https://i.imgur.com/oFgiige.jpg"
+            <li><img class="static-drinks" id="static-fourth" src="https://i.imgur.com/ZHcWqY1.png"
                     alt="fourth drink of the week"></li>
         </ul>
         <h5>Bartender-built, barfly-approved</h5>
@@ -45,27 +50,61 @@
     <div class="showcase">
         <!-- populated by function/event handler triggered by search -->
         <div id="showcase-head">
-            <h3 id="drink-name">This is where this bitch will showcase information</h3>
-            <img id="drink-display-image" src="#" alt="drink image">
-            <button id="drink-favorites">Favorited by 0 People!</button>
+            <h3 id="drink-name">What's On the Menu?</h3>
+            <img class="showcase-details" id="drink-display-image" src="https://i.imgur.com/1mPqqkE.jpg"
+                alt="drink image">
+        </div>
+        <div id="showcase-ingredients">
+            <h3>Ingredients & Instructions</h3>
+            <ul id="ingredient-list">
+                <li>first item</li>
+                <li>second item</li>
+                <li>third</li>
+                <li>fourth</li>
+                <li>fifth</li>
+                <li>sixth</li>
+                <li>seventh</li>
+                <!-- whatever populates this must be a paragraph to be formatted properly! -->
+            </ul>
+        </div>
+        <div class="scroll" id="instructions">
+            <p id="instructions-text">Here's what you've got to do!</p>
+            <!-- whatever populates this must be a paragraph to be formatted properly!-->
+        </div>
+        <div id="like-btn">
+            <button id="drink-favorites-btn">Favorited by 0 People!</button>
         </div>
     </div>
 
     <div id="comments">
         <!-- populated by user input in #comment-form -->
         <form id="comment-form">
-            <label for="new-comment">Leave a Comment</label>
-            <input type="text" name="user-comment-input">
+            <label for="new-comment" id="comment-label">Leave a Comment</label>
+            <input type="text" id="user-comment" name="user-comment-input">
             <input id="comment-btn" type="submit" value="Comment">
         </form>
     </div>
 
+    <div id="comments-section">
+        <!--this is where new comments should appear-->
+    </div>
+
     <div id="favorites">
-        <!-- consider removing img ids from here and instead using a function to render each individually, maxing out at an arbitrary # -->
-        <img id="favorite-1" src="#" alt="Your first favorite drink">
-        <img id="favorite-2" src="#" alt="Your second favorite drink">
-        <img id="favorite-3" src="#" alt="Your third favorite drink">
-        <img id="favorite-3" src="#" alt="Your fourth favorite drink">
+        <div id="favorites-bar">
+            <!-- consider removing img ids from here and instead using a function to render each individually, maxing out at an arbitrary # -->
+            <img class="favorite-drink-images" id="favorite-1" src="https://i.imgur.com/Q1VepXP.png"
+                alt="Your first favorite drink">
+            <img class="favorite-drink-images" id="favorite-2" src="https://i.imgur.com/z8tG2m3.png"
+                alt="Your second favorite drink">
+            <img class="favorite-drink-images" id="favorite-3" src="https://i.imgur.com/124eoV3.png"
+                alt="Your third favorite drink">
+            <img class="favorite-drink-images" id="favorite-3" src="https://i.imgur.com/l6Dq9mL.png"
+                alt="Your fourth favorite drink">
+            <img class="favorite-drink-images" id="favorite-3" src="https://i.imgur.com/gXHAwI1.png"
+                alt="Your fourth favorite drink">
+            <button id="reset-favorites-btn">Reset Favorites</button>
+        </div>
+
     </div>
 
     <!-- return to top bar inserted at bottom footer -->
