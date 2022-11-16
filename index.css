@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400&family=Patrick+Hand+SC&family=Rancho&display=swap');
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 0px solid #ddd;
+}
+  
+th,
+td {
+    text-align: left;
+    padding: 8px;
+}
+
+/* width */        
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+  
+.scroll {
+    display: block;
+    border: 0px solid red;
+    padding: 5px;
+    margin-top: 5px;
+    width: 100%;
+    height: 100px;
+    overflow-y: scroll;
+}
+
+.glow {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+
+body {
+    background-color: #FAECE7;
+}
+
+#title-bar {
+    display: inline;
+    max-width: 250px;
+}
+
+#title {
+    font-size: 45px;
+    font-style: oblique;
+}
+
+#subtitle {
+    font-size: 25px;
+    font-style: italic;
+}
+
+#logo {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 200px;
+    height: 200px;
+
+}
+
+/*
+#secondary-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    margin-left: 100px;
+}
+#secondary-logo > img {
+    max-width: 100%;
+    max-height: 100%;
+}
+*/
+
+#site-logo {
+    position: absolute;
+    max-height: 150%;
+    max-width: 150%;
+    right: 100px;
+}
+
+/*
+#search-bar {
+    position: absolute;
+    right: 30px;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+#search-btn {
+    display: inline-block;
+    border: 1px solid;
+    font-family: 'Rancho', cursive;
+    font-size: 15px; 
+    background-color: #FFCD75;
+    color: #000;
+    max-height: 100%;
+    max-width: 100%;
+    
+}
+#search-label {
+    font-family: 'Rancho', cursive;
+    font-size: 22px;
+    color: #FFF;
+    text-shadow: 1px 1px #000000;
+    text-decoration-line: underline;
+    padding-right: 4px;
+}
+*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+h2, h4 {
+    font-family: 'Rancho', cursive;
+    text-align: center;
+    text-shadow: 2px 2px #000000;
+    color: #FFD791;
+}
+
+li.static-image:not(:last-child) { 
+    margin-bottom: 3px;  
+ }
+
+#static-beer-list > li > img {
+    max-height: 200%;
+    max-width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 135px; 
+    border: 1px solid #FFF;
+    border-radius: 30px;
+    margin-bottom: 10px;
+
+}
+
+.favorites {
+    position: absolute;
+    left: 0px;
+    width: 300px;
+    height: 800px;
+    border: 3px solid #FFCD75;
+    border-radius: 30px;
+    background-color: #FFE5DE;
+    margin-left: 25px;
+    margin-top: 50px;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+}
+
+.favorites > h3 {
+    font-family: 'Patrick Hand SC', cursive;
+    font-size: 20px;
+    text-align: center;
+    color: #FF8427;
+    text-shadow: 1px 1px #FFF; 
+    width: auto;
+}
+
+.favorites > h5 {
+    font-family: 'Patrick Hand SC', cursive;
+    font-size: 15px; 
+    font-style: italic;
+    text-align: center;
+    color: #FF8427;
+    text-shadow: 1px 1px #FFF;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.showcase {
+    position: relative;
+    border: 3px solid #FFCD75;
+    border-radius: 30px;
+    background-color: #FFE5DE;
+    width: 500px;
+    height: 900px;
+    left: 650px;
+    margin-top: 90px;
+}
+
+#showcase-head {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+#beer-display-image {
+    position: absolute;
+    max-height: 50%;
+    max-width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    border: 1px solid #FFF;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    left: 200px;
+}
+
+#beer-favorites-btn {
+    position: absolute;
+    border: 1px solid #000;
+    border-radius: 30px;
+    font-family: 'Rancho', cursive;
+    font-size: 15px;
+    background-color: #FFCD75;
+    color: #000;
+    right: 20px;
+    bottom: 10px;
+    
+
+}
+
+#food-pairings {
+    position: relative;
+    list-style: square;
+}
+
+#brewers-instructions {
+    font-family: 'Dongle', sans-serif;
+    font-size: 20px;
+    color: #000;
+    text-shadow: 1px 1px #FFF;
+    display: block;
+    position: absolute;
+    border: 1px solid #000;
+    background-color: #FFF;
+    right: 25px;
+    bottom: 135px;
+    max-height: 100%;
+    max-width: 275px;
+
+}
+
+#showcase-head > h3 {
+    font-family: 'Patrick Hand SC', cursive;
+    font-size: 20px;
+    text-align: center;
+    color: #FF8427;
+    text-shadow: 1px 1px #FFF; 
+    width: auto;
+}
+
+#showcase-food-pairings > h3 {
+    font-family: 'Rancho', cursive;
+    font-size: 25px;
+    color: #FFCD75;
+    -webkit-text-stroke-width: .25px;
+    -webkit-text-stroke-color: black;
+
+}
+
+#showcase-food-pairings {
+    position: absolute;
+    font-family: "Dongle", sans-serif;
+    font-size: 20px;
+    color: #000;
+    text-shadow: 1px 1px #fff;
+    block-size: 150px;
+    max-height: 50%;
+    max-width: 30%;
+    margin-left: 25px;
+    margin-top: 450px;
+
+}
+
+/*
+#favorites {
+    position: relative;
+    display: block;
+    bottom: 0;
+    border: 3px solid #FFCD75;
+    border-radius: 30px;
+    background-color: #FFE5DE;
+}
+#favorites-bar {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    left: 25px;
+    bottom: 0;
+}
+#favorites-bar > img {
+    position: relative;
+    display: inline-block; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000;
+    border-radius: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#reset-favorites-btn {
+    position: absolute;
+    display: block;
+    border: 1px solid #000;
+    border-radius: 30px;
+    font-family: 'Rancho', cursive;
+    font-size: 15px;
+    background-color: #FFCD75;
+    color: #000;
+    right: 50px;
+    bottom: 10px;
+}
+*/
+
+#comments {
+    position: relative;
+    display: block;
+    border-radius: 30px;
+    background-color: #FAECE7;
+    margin-bottom: 100px;
+}
+
+#comment-label {
+    font-family: 'Rancho', cursive;
+    font-size: 22px;
+    color: #FFF;
+    text-shadow: 1px 1px #000000;
+    text-decoration-line: underline;
+    padding-right: 4px;
+}
+
+#comment-form {
+    position: absolute;
+    display: block;
+    right: 160px;
+}
+
+#comment-btn {
+    display: inline-block;
+    border: 1px solid;
+    font-family: 'Rancho', cursive;
+    font-size: 15px; 
+    background-color: #FFCD75;
+    color: #000;
+    max-height: 100%;
+    max-width: 100%;
+}
+
