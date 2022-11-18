@@ -1,5 +1,6 @@
 const url = ("https://api.punkapi.com/v2/beers/")
 let currentBeer;
+let beerName = document.querySelector("#beer-pop");
 
 fetch(url)
 .then(r => r.json())
@@ -22,7 +23,7 @@ function renderLogo() {
 }
 
 function beerImage(beer) {
-    let beerData = beer.filter(beer => beer.id < 3);
+    let beerData = beer.filter(beer => beer.id < 4)
     beerData.forEach(beer => {
         let beerList = document.querySelector("#static-beer-list")
         let favList = document.createElement("li")
@@ -30,6 +31,10 @@ function beerImage(beer) {
         beerImage.src = beer.image_url;
         beerList.appendChild(favList);
         favList.appendChild(beerImage);
+
+        beerImage.addEventListener("mouseover", e => {
+            beerDetails(beer)
+        })
     });
 }
 
@@ -61,6 +66,25 @@ function renderFeature(beer) {
     
     });
 }
+
+///
+
+/* configure this to appear in the div block created. use as normal function, rather than invoking internally
+
+function beerDetails(beer) {
+    let beerName = document.querySelector("#popup");
+    beerName.textContent = `${beer.name}, ${beer.tagline} First brewed: ${beer.first_brewed}, ${beer.description}, ABV:${beer.abv}`;
+    
+    beerName.onmouseover = function () {
+        document.getElementById("popup").style.display = "block";
+    }
+    beerName.onmouseout = function () {
+        document.getElementById("popup").style.display = "none";
+    }
+}
+*/
+  
+
 
 function favCounter() {
     let initFavCount = 0;
