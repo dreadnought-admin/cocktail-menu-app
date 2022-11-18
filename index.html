@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <head>
     <title></title>
@@ -7,3 +8,100 @@
     <!-- another comment -->
 </body>
 </html>
+
+
+<!DOCTYPE html>
+<html lang="eng">
+<head> <!-- don't touch! -->
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="src/index.js" charset="utf-8"></script>
+    <title>Beer Buddy</title>
+</head>
+<body> <!-- each div id to be populated by js functions on page load -->
+    <div id="title-bar">
+        <h2 id="title">Beer Buddy!</h2>
+        <h4 id="subtitle">Browse Delicious Beers 🍻</h4>
+    </div>
+
+    <div id="logo"> <!-- rendered by a function in js to expedite -->
+    </div>
+
+    <div id="search-bar">
+        <label for="menu-search" id="search-label">Search For A Beer:</label>
+        <input type="search" id="menu-search" name="q">
+        <button id="search-btn">Find Your Next Brew!</button>
+    </div>
+
+    <div id="glowbanner">
+        <button id="glow-btn">Light it up!</button>
+    </div>
+
+    <div id="beer-pop">
+        <p class="" id="shownBeer"></p>
+    </div>
+
+    <div class="favorites"> <!-- populated by function that renders images pulled from 4 ids in API -->
+        <h3>Favorites of the Week</h3>
+        <ul id="static-beer-list">
+            
+        </ul>
+        <h5>Beer-lover Approved!</h5>
+    </div>
+
+    <div class="showcase"> <!-- populated by a single beer @ random id/index -->
+        <div id="showcase-head">
+            <h3 id="beer-name">Featured Brew</h3>
+            <img class="showcase-details" id="beer-display-image" src="#" alt="beer image">
+        </div>
+        <div id="showcase-food-pairings">
+            <h3>Perfect Food Pairings</h3>
+            <ul id="food-pairings">
+               <li id="pairing-one">Pairing one</li>
+               <li id="pairing-two">Pairing two</li>
+               <li id="pairing-three">Pairing three</li><!-- populated by a list that then gets paragraph children appended to it -->
+            </ul>
+        </div>
+        <div id="scroll-banner">
+            <h3>About This Feature</h3>
+        </div>
+        <div class="scroll" id="brewers-instructions">
+            <p id="instructions-text"></p><!-- whatever populates this must be a paragraph to be formatted properly!-->
+        </div>
+        <div id="like-btn">
+            <button id="beer-favorites-btn">Favorited by 0 People!</button>
+        </div>
+    </div>
+
+    <div id="comments"> <!-- populated by user input in #comment-form -->
+        <form id="comment-form">
+            <label for="new-comment" id="comment-label">Leave a Comment</label>
+            <input type="text" id="user-comment" name="user-comment-input">
+            <input id="comment-btn" type="submit" value="Comment">
+        </form>
+    </div>
+
+    <div id="comments-section">
+        <ul id="#comment-list">
+            <!--comments populate this-->
+        </ul>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
