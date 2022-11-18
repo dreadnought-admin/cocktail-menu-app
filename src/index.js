@@ -1,5 +1,4 @@
-const url = ("http://localhost:3000/beers")
-let currentBeer;
+const url = ("https://api.punkapi.com/v2/beers/")
 
 fetch(url)
 .then(r => r.json())
@@ -8,8 +7,11 @@ fetch(url)
     beerImage(json);
     renderFeature(json[11]);
     renderLogo();
+    aboutCraftBeer();
     favCounter();
     comments();
+    beerDetails();
+    bannerGlow();
 });
 
 
@@ -30,10 +32,16 @@ function beerImage(beer) {
         beerImage.src = beer.image_url;
         beerList.appendChild(favList);
         favList.appendChild(beerImage);
+
         beerImage.addEventListener("mouseover", e => {
             beerDetails(beer)
         })
     });
+}
+
+function aboutCraftBeer() {
+    let craftBeerInfo = document.querySelector("#shownBeer");
+    craftBeerInfo.textContent = `Craft beer is a beer that has been made by craft breweries. They produce smaller amounts of beer, typically less than large breweries, and are often independently owned. Such breweries are generally perceived and marketed as having an emphasis on enthusiasm, new flavours, and varied brewing techniques. The microbrewery movement began in both the United States and United Kingdom in the 1970s, although traditional artisanal brewing existed in Europe for centuries and subsequently spread to other countries. As the movement grew, and some breweries expanded their production and distribution, the more encompassing concept of craft brewing emerged.`
 }
 
 /*
@@ -65,6 +73,30 @@ function renderFeature(beer) {
     });
 }
 
+function bannerGlow() {
+    let glowButton = document.querySelector("#glow-btn");
+    let banner = document.querySelector("#title");
+
+    glowButton.addEventListener("click", (e) => {
+        e.preventDefault();
+        
+        banner.className = "glow";
+        
+    });
+}
+
+function beerDetails(beer) {
+    let beerShown = document.querySelector("#shownBeer");
+    
+    beerShown.addEventListener("onmouseover", (e) => {
+        e.preventDefault();
+
+        e.target.beerShown;
+        beerShown.textContent = `${beer.name}, ${beer.tagline} First Brewed: ${beer.first_brewed}, ${beer.description}, ABV:${beer.abv}`;
+        
+    })
+}
+
 function favCounter() {
     let initFavCount = 0;
     let favButton = document.querySelector("#beer-favorites-btn");
@@ -76,7 +108,6 @@ function favCounter() {
         favButton.textContent = `Favorited by ${favCount} People!`;
     });
 }
-
 
 function comments() {
     let newComment = document.querySelector("#comment-form");
@@ -95,8 +126,10 @@ function comments() {
 
     });
 }
+
 function beerDetails(beer) {
     let beerName = document.querySelector("#beer-pop")
+    beerName 
     beerName.textContent = `${beer.name}, ${beer.tagline} First brewed: ${beer.first_brewed}, ${beer.description}, Abv:${beer.abv}`
     // beerName.append(beerPop);
     let beerPop = document.getElementById('#popup');
@@ -107,4 +140,5 @@ beerPop.onmouseout = function() {
   document.getElementById('popup').style.display = 'none';
 }
 }
+
 
